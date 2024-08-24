@@ -19,13 +19,13 @@ To set up and run this project locally, follow these steps:
 
 4. API Endpoints
 
-   .User Registration
+   -User Registration
 
-   .Endpoint: /register
+   -Endpoint: /register
 
-   .Method: POST
+   -Method: POST
 
-   .Request Body:
+   -Request Body:
    {
    "username": "test",
    "email": "test@gmail.com",
@@ -34,41 +34,41 @@ To set up and run this project locally, follow these steps:
 
 5. User Login
 
-   .Endpoint: /login
+   -Endpoint: /login
 
-   .Method: POST
+   -Method: POST
 
-   .Request Body:
+   -Request Body:
    {
    "username": "test",
    "password": "123123"
    }
 
-   .Response:
+   -Response:
    ("User logged in successfully")
 
-Note: After logging in, a token will be generated and printed in the console. This token must be included in the Authorization header as a Bearer token for accessing protected routes.
+-Note: After logging in, a token will be generated and printed in the console. This token must be included in the Authorization header as a Bearer token for accessing protected routes.
 
 6. User Logout
 
-   .Endpoint: /logout
+   -Endpoint: /logout
 
-   .Method: POST
+   -Method: POST
 
-   .Request Header:
+   -Request Header:
 
-   .Authorization: Bearer <token>
+   -Authorization: Bearer <token>
 
-   .Response:
+   -Response:
    ("Logged out successfully")
 
 7. Add Task
 
-   .Endpoint: /tasks
+   -Endpoint: /tasks
 
-   .Method: POST
+   -Method: POST
 
-   .Request Body:
+   -Request Body:
    {
    "title": "task-1",
    "status": "completed",
@@ -76,30 +76,30 @@ Note: After logging in, a token will be generated and printed in the console. Th
    "assigneduser": "employee"
    }
 
-   .Response:
+   -Response:
    ("New task created")
 
 8. Get All Tasks
 
-   .Endpoint: /api-gettask/alltasks
-   .Method: GET
-   .Response: ("All tasks will appear in the response").
+   -Endpoint: /api-gettask/alltasks
+   -Method: GET
+   -Response: ("All tasks will appear in the response").
 
 9. Get Filtered Tasks
 
-   .Endpoint: /api-gettask/alltasks
-   .Method: GET
-   .Response: ("Filtered tasks based on query parameters will appear in the response.")
+   -Endpoint: /api-gettask/alltasks
+   -Method: GET
+   -Response: ("Filtered tasks based on query parameters will appear in the response.")
    
 10. Delete Task
 
-   .Endpoint: /api-gettask/deletetask/:id
-   .Method: DELETE
-   .Response:
+   -Endpoint: /api-gettask/deletetask/:id
+   -Method: DELETE
+   -Response:
    ("Task deleted")
 
 
 Deployment
 The application can be accessed at the following URL once deployed:
 
-Deployed Link: [(https://edulabs-backtemp.onrender.com)]
+Deployed Link: [[LINK](https://edulabs-backtemp.onrender.com)]
