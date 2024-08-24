@@ -102,4 +102,4 @@ Note: After logging in, a token will be generated and printed in the console. Th
 Deployment
 The application can be accessed at the following URL once deployed:
 
-Deployed Link: [Insert Deployed URL Here]
+Deployed Link: [(https://edulabs-backtemp.onrender.com)]
