@@ -102,4 +102,4 @@ To set up and run this project locally, follow these steps:
 Deployment
 The application can be accessed at the following URL once deployed:
 
-Deployed Link: [](https://edulabs-backtemp.onrender.com)
+Deployed Link: [LINK](https://edulabs-backtemp.onrender.com)
