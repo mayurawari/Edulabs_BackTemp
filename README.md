@@ -90,16 +90,13 @@ To set up and run this project locally, follow these steps:
    -Endpoint: /api-gettask/alltasks
    -Method: GET
    -Response: ("Filtered tasks based on query parameters will appear in the response.")
-   
+
 10. Delete Task
 
-   -Endpoint: /api-gettask/deletetask/:id
-   -Method: DELETE
-   -Response:
-   ("Task deleted")
+    -Endpoint: /api-gettask/deletetask/:id
+    -Method: DELETE
+    -Response:
+    ("Task deleted")
 
-
-Deployment
-The application can be accessed at the following URL once deployed:
-
-Deployed Link: [LINK](https://edulabs-backtemp.onrender.com)
+11. Deployment
+    Deployed Link: [LINK](https://edulabs-backtemp.onrender.com)
