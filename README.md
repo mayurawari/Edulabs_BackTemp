@@ -29,3 +29,44 @@ input validation.
 
 5. Code Quality:
 Follow best practices, use appropriate design patterns
+
+
+//API Steps to follow
+
+//To register new user 
+//Format to be followed
+Method: post;
+{
+  "username":"test",
+  "email":"test@gmail.com",
+  "password":"123123"
+}
+
+//To login new user 
+//Format to be followed
+Method: post;
+{
+  "username":"test",
+  "password":"123123"
+}
+
+Note:please provide token generated in console to the authorization header before hitting protected routes or to logout user.
+
+//To logout user 
+//Format to be followed
+Method: post;
+("Provide token in authorization header)
+
+
+//To add task
+//Format to be followed
+Method: post;
+{
+  "title":"task-1",
+  "status":"completed",
+  "priority":"low",
+  "assigneduser":"employee"
+}
+
+//To get alltask
+Endpoint/url:http://localhost:9090/api-gettask/alltasks
