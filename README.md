@@ -1,72 +1,105 @@
 # Edulabs_BackTemp
 
-//API Steps to follow
+A simple and efficient backend API for managing users and tasks, designed to handle common operations such as user registration, authentication, and task management.
 
-//To register new user 
-//Format to be followed
-Method: post;
-req.body:{
-  "username":"test",
-  "email":"test@gmail.com",
-  "password":"123123"
-}
-response:"User Successfully registred"
+## Installation
 
-//To login new user 
-//Format to be followed
-Method: post;
-req.body:{
-  "username":"test",
-  "password":"123123"
-}
-response:"user logedin succesfully"
+To set up and run this project locally, follow these steps:
 
-Note:please provide token generated in console to the authorization header before hitting protected routes or to logout user.
+1. Clone the repository:
+   git clone <https://github.com/mayurawari/Edulabs_BackTemp.git>
 
-//To logout user 
-//Format to be followed
-Method: post;
-("Provide token in authorization header)
-response:"Logged out successfully"
+2. Install the necessary dependencies:
+   npm install
+
+3. Start the server:
+   npm run start
+   or
+   npm run server
+
+4. API Endpoints
+
+   .User Registration
+
+   .Endpoint: /register
+
+   .Method: POST
+
+   .Request Body:
+   {
+   "username": "test",
+   "email": "test@gmail.com",
+   "password": "123123"
+   }
+
+5. User Login
+
+   .Endpoint: /login
+
+   .Method: POST
+
+   .Request Body:
+   {
+   "username": "test",
+   "password": "123123"
+   }
+
+   .Response:
+   ("User logged in successfully")
+
+Note: After logging in, a token will be generated and printed in the console. This token must be included in the Authorization header as a Bearer token for accessing protected routes.
+
+6. User Logout
+
+   .Endpoint: /logout
+
+   .Method: POST
+
+   .Request Header:
+
+   .Authorization: Bearer <token>
+
+   .Response:
+   ("Logged out successfully")
+
+7. Add Task
+
+   .Endpoint: /tasks
+
+   .Method: POST
+
+   .Request Body:
+   {
+   "title": "task-1",
+   "status": "completed",
+   "priority": "low",
+   "assigneduser": "employee"
+   }
+
+   .Response:
+   ("New task created")
+
+8. Get All Tasks
+
+   .Endpoint: /api-gettask/alltasks
+   .Method: GET
+   .Response: ("All tasks will appear in the response").
+
+9. Get Filtered Tasks
+
+   .Endpoint: /api-gettask/alltasks
+   .Method: GET
+   .Response: ("Filtered tasks based on query parameters will appear in the response.")
+   
+10. Delete Task
+
+   .Endpoint: /api-gettask/deletetask/:id
+   .Method: DELETE
+   .Response:
+   ("Task deleted")
 
 
-//To add task
-//Format to be followed
-Method: post;
-req.body:{
-  "title":"task-1",
-  "status":"completed",
-  "priority":"low",
-  "assigneduser":"employee"
-}
-response:"new Task created"
+Deployment
+The application can be accessed at the following URL once deployed:
 
-//To get alltask
-Method:get;
-Endpoint/url: (http://localhost:9090/api-gettask/alltasks)
-response: "all tasks will appear as response"
-
-//To get filteredltask
-Method:get;
-Endpoint/url: (http://localhost:9090/api-gettask/alltasks)
-response: "all filtered tasks will appear as response"
-
-//to delete task
-Method:delete
-Endpoint/url:(http://localhost:9090/api-gettask/deletetask/:id)
-response: "task deleted"
-
-
-//to update task
-method:patch;
-Enpoint/url:(http://localhost:9090/api-gettask//updatetask/:id)
-//Update the field in req.body 
-//Format to be followed
-req.body:{
-  "title":"task-1",
-  "status":"completed",
-  "priority":"low",
-  "assigneduser":"employee"
-}
-
-response: "updated task will appear as response"
+Deployed Link: [Insert Deployed URL Here]
