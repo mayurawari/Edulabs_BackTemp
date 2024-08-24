@@ -71,6 +71,35 @@ taskroute.patch("/updatetask/:id",role(["admin"]),async(req,res)=>{
     }
 })
 
+taskroute.get("/filtertask",role(["admin","user"]),async(req,res)=>{
+    
+    const {status,priority,assigneduser} =req.body;
+
+    try {
+
+        const obj={};
+
+        if(status){
+            query.status=status;
+        }
+        else if(priority){
+            query.priority=priority;
+        }
+        else if(assigneduser){
+            query.assigneduser=assigneduser;
+        }
+        const checktask=await taskmodel.find(obj);
+        // console.log(checktask);
+        if(checktask.length ===0){
+           return res.send("match not found");
+        }
+
+       res.send(checktask);
+    } catch (error) {
+        console.log(error);
+    }
+})
+
 taskroute.delete("/deletetask/:id",role(["admin"]),async(req,res)=>{
     try {
         const checktask=await taskmodel.findByIdAndDelete(req.params.id);
